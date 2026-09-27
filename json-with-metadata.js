@@ -1,6 +1,6 @@
 /**
- * @fileoverview JSON reporter
- * @author Burak Yigit Kaya aka BYK
+ * @fileoverview JSON reporter, including rules metadata
+ * @author Chris Meyer
  */
 "use strict";
 
@@ -8,6 +8,9 @@
 // Public Interface
 //------------------------------------------------------------------------------
 
-module.exports = function(results) {
-    return JSON.stringify(results);
+module.exports = function(results, data) {
+    return JSON.stringify({
+        results,
+        metadata: data
+    });
 };
