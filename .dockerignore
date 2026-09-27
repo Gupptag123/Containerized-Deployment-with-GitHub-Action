@@ -1,0 +1,17 @@
+node_modules/
+npm-debug.log*
+.npm
+.env
+.env.*
+coverage/
+.nyc_output/
+dist/
+*.log
+.DS_Store
+.git
+.github
+README.md
+docs/
+tests/
+*.test.js
+*.spec.js
